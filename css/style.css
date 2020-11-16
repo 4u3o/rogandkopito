@@ -1,7 +1,6 @@
 @import "abstracts/normalize.css";
 @import "abstracts/scaffolding.css";
 @import "blocks/footer.css";
-@import "blocks/image.css";
 @import "blocks/link.css";
 @import "blocks/visually-hidden.css";
 @import "blocks/wrapper.css";

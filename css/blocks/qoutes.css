@@ -1,9 +1,14 @@
+.quotes {
+  position: relative;
+}
+
 .quotes__container {
   flex-wrap: wrap;
 }
 
-.quotes__card {
-  width: calc((100% - 60px) / 2);
+.quotes__card blockquote {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .quotes__card blockquote p {
@@ -40,15 +45,52 @@
   font-size: 18px;
 }
 
+.quotes__next,
+.quotes__prev {
+  position: absolute;
+  top: calc((100% - 50px) * 0.5);
+  background-color: transparent;
+  border: none;
+}
+
+.quotes__next:focus,
+.quotes__prev:focus {
+  outline: none;
+}
+
+.quotes__next:hover::after,
+.quotes__prev:hover::after {
+  cursor: pointer;
+  color: #000;
+}
+
+.quotes__next {
+  right: -9px;
+}
+
+.quotes__prev {
+  left: -38px;
+}
+
+.quotes__next::after,
+.quotes__prev::after {
+  position: absolute;
+  font-weight: 700;
+  font-size: 2em;
+  color: #555555;
+}
+
+.quotes__next::after {
+  content: "\21FE";
+}
+
+.quotes__prev::after {
+  content: "\21FD";
+}
+
 @media (max-width: 1199px) {
   .quotes__card blockquote {
     margin-right: 0;
     margin-left: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .quotes__card {
-    width: 100%;
   }
 }
