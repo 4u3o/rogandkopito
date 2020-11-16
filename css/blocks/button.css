@@ -1,0 +1,17 @@
+.button {
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0 0 5px #000;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}

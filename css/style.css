@@ -1,0 +1,17 @@
+@import "abstracts/normalize.css";
+@import "abstracts/scaffolding.css";
+@import "blocks/footer.css";
+@import "blocks/image.css";
+@import "blocks/link.css";
+@import "blocks/visually-hidden.css";
+@import "blocks/wrapper.css";
+@import "blocks/button.css";
+@import "blocks/header.css";
+@import "blocks/container.css";
+@import "blocks/card.css";
+@import "blocks/price.css";
+@import "blocks/options.css";
+@import "blocks/qoutes.css";
+@import "blocks/main_block.css";
+@import "blocks/location.css";
+@import "blocks/questions.css";

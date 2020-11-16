@@ -1,0 +1,54 @@
+.quotes__container {
+  flex-wrap: wrap;
+}
+
+.quotes__card {
+  width: calc((100% - 60px) / 2);
+}
+
+.quotes__card blockquote p {
+  margin: 0;
+  position: relative;
+  padding: 0 15px 0 30px;
+}
+
+.quotes__card blockquote p::before {
+  content: '\201C';
+  top: 0;
+  left: -10px;
+  font-size: 3em;
+  position: absolute;
+  color: #000;
+}
+
+.quotes__card blockquote p::after {
+  content: '\201D';
+  bottom: -20px;
+  right: 5px;
+  font-size: 2em;
+  position: absolute;
+  color: #000;
+}
+
+.quotes__card footer {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.quotes__text {
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+  .quotes__card blockquote {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .quotes__card {
+    width: 100%;
+  }
+}
