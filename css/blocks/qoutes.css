@@ -3,12 +3,12 @@
 }
 
 .quotes__container {
-  flex-wrap: wrap;
+  padding: 0 40px;
 }
 
 .quotes__card blockquote {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .quotes__card blockquote p {
@@ -65,11 +65,11 @@
 }
 
 .quotes__next {
-  right: -9px;
+  right: 0;
 }
 
 .quotes__prev {
-  left: -38px;
+  left: 0;
 }
 
 .quotes__next::after,
@@ -82,22 +82,21 @@
 
 .quotes__next::after {
   content: "\21FE";
+  right: 0;
 }
 
 .quotes__prev::after {
   content: "\21FD";
-}
-
-@media (max-width: 1199px) {
-  .quotes__card blockquote {
-    margin-right: 5px;
-    margin-left: 5px;
-  }
+  left: 0;
 }
 
 @media (max-width: 767px) {
   .quotes__card blockquote {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .quotes__container {
+    padding: 0;
   }
 }
