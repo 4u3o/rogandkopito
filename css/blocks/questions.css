@@ -1,10 +1,8 @@
 .questions__form {
-  max-width: 50%;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 
 .questions__form input {
@@ -12,6 +10,8 @@
   padding: 5px 10px;
   border: none;
   border-bottom: 1px solid #555555;
+  align-self: flex-start;
+  max-width: 50%;
 }
 
 .questions__form input:focus {
@@ -44,14 +44,13 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1199px) {
-  .questions__form {
-    max-width: 80%;
-  }
-}
-
 @media (max-width: 767px) {
   .questions__form {
     max-width: 100%;
+  }
+
+  .questions__form input {
+    max-width: 100%;
+    align-self: stretch;
   }
 }

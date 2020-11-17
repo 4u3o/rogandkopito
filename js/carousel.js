@@ -17,6 +17,7 @@ $(document).ready(function(){
   var owl = $(this).find('.owl-carousel').owlCarousel({
     loop:true,
     autoHeight: true,
+    dots: false,
     responsive: {
       0: {
         items: 1

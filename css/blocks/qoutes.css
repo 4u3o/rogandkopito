@@ -7,8 +7,8 @@
 }
 
 .quotes__card blockquote {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .quotes__card blockquote p {
@@ -89,6 +89,13 @@
 }
 
 @media (max-width: 1199px) {
+  .quotes__card blockquote {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 767px) {
   .quotes__card blockquote {
     margin-right: 0;
     margin-left: 0;

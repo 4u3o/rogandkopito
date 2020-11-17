@@ -37,7 +37,8 @@ p:last-child {
 
 #map {
   width: 50%;
-  height: 400px;
+  align-self: stretch;
+  min-height: 300px;
 }
 
 *,
